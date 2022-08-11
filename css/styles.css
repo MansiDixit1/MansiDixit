@@ -1,0 +1,453 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+a{
+    color:#542E71;
+    font-family:'Valera Round', sans-serif; 
+    text-decoration: none;
+}
+a:hover{
+    color:white;
+}
+
+.active { background-color: #fff}
+
+body{
+    margin: 0px;
+    text-align: center;
+    overflow-x:hidden;
+    
+}
+.bottom-container
+{
+    background-color: #E4BAD4;
+    padding:20px 0 10px;
+    letter-spacing: 3px;
+
+}
+
+ .box-main
+ {
+    width: 70%;
+    height: 70%;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-color: #E4BAD4;
+    margin: 0 auto;
+    position: absolute;
+    top: 50% ;
+    left: 50% ;
+ }
+
+ .child
+ {
+  transform: translate(-50% , -50% );
+  z-index: 2;
+ }
+
+
+ .child2
+{
+    transform: translate(-50% , 100% );
+   
+}
+
+ .child3
+ {
+  transform: translate(-50% , 250% );
+ }
+
+ .child4
+ {
+  transform: translate(-50% , 400% );
+ }
+
+ .cloud1
+ {
+     position:absolute;
+     top:50px;
+     right:110px;
+     z-index: 1;
+ }
+ .cloud2
+ {
+     position:absolute;
+     bottom:50px;
+     left:80px;
+     z-index: 2;
+ }
+
+.copyright
+{
+    font-size: 12px;
+    color:#542E71;
+    font-family: 'montserrat',sans-serif;
+}
+
+
+header{
+    height: 50px;
+    width: 100%;
+    z-index: 3;
+    position: fixed;
+    background-color: mistyrose;
+}
+
+
+h1{
+    margin:0px auto 0px auto;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color:#542E71;
+    transform:translate(8%,-150%);
+}
+
+h2{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5rem;
+    color:#542E71;
+    margin-top: 3%;
+    
+}
+h3{
+    font-family: 'Varela Round', sans-serif;
+    color:#93329E;
+}
+.inner-div
+{
+    height:35%;
+    width:60%;
+    margin: auto;
+    align-items: center;
+}
+
+.icon{
+    font-family: 'Varela Round', sans-serif;
+    color:#93329E;
+    font-size:13px;
+    padding-top: 3%;
+    font-weight: 600;
+  
+}
+
+
+.top-container{
+    background-color: mistyrose   ;
+     height: 750px;
+}
+
+.second-container
+{
+    background-color: mistyrose;
+    height: 750px;
+}
+
+.Third-container
+{
+ 
+    background-color: mistyrose;
+    height: 750px;
+
+}
+.fourth-container
+{
+ 
+    background-color: mistyrose;
+    height: 750px;
+
+}
+
+.my-image
+{
+    height:55%;
+    width: 20%;
+    max-width: 100%;
+    transform:translate(-110%,8%);
+}
+
+nav{
+    float: left;
+    line-height: 50px;
+    margin-left: 3%;
+}
+
+nav a{
+    font-family: 'Varela Round', sans-serif;
+    color:#93329E;
+    font-size: 1rem;
+    margin:0 10px;
+    font-weight: bold;
+    position:relative;   
+}
+
+nav a::after
+{
+    content:"";
+    position: absolute;
+    height: 1.5px;
+    width: 0%;
+    background-color: black;
+    left: 0;
+    bottom:-3px;
+    transition: 0.3s;
+    
+}
+
+nav a:hover{
+    color: black;
+}
+nav a:hover::after{
+    width: 100%;
+    
+}
+
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2; 
+}
+
+.desc
+{
+ margin-top: 10%;
+ font-weight: 600;
+ text-align:justify;
+ font-size: 12px;
+}
+.div1
+{
+    transform: translate(60%,-210%);
+}
+
+
+.skill-row
+{
+    width: 60%;
+    margin:100px auto 100px auto;
+    text-align:justify;
+
+}
+.skill-row ul{
+    list-style-type:none;
+    line-height: 20px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+
+}
+.sub-title
+{
+    font-weight: normal;
+    transform:translate(8%,-400%);
+}
+
+.slider p{
+    width: 50em;
+}
+
+
+.thanks
+{
+color:#542E71;
+font-family: 'Pacifico', cursive;
+font-size: 1.5rem;
+letter-spacing: 0px;
+
+}
+
+.adjust{
+    padding-top:1%;
+}
+.adjust1{
+    padding-top:1%;
+    text-align: center;
+}
+.adjust1 h3{
+    margin-left:-10%;
+}
+.slider {
+    display: flex;
+    height: 50%;
+    width: 420%; 
+    transition:0.5s;
+  }
+  .slider section {
+    flex-basis: 100%;
+    justify-content:center;
+    align-items: center;
+    margin: -1% 0 0 0.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .left, .right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .arrow i {
+    color:#542E71;
+    font-size: 30px;
+  }
+  .left {
+    left: 30px;
+  }
+  .right {
+    right: 30px;
+  }
+  .control ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%);
+  }
+  .control ul li {
+    width: 10px;
+    height: 10px;
+    background: #542E71;
+    border: 2px solid #542E71;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .control ul li.selected {
+    background: transparent;
+  }
+  
+.arrow:hover{
+    opacity:50%;
+}
+
+.web-link{
+opacity: 50%;
+line-height: 2;
+display:inline;
+}
+
+.iconp{
+    transform: translate(-15%, 250%);
+}
+.iconr{
+    transform: translate(-15%, 450%);
+}
+.icong{
+    transform: translate(5%, 50%);
+}
+.iconc{
+    transform: translate(5%, 250%);
+}
+
+
+
+
+
+@media (min-width:320px) and (max-width: 900px){ 
+  
+      .slider{
+        height: 190px;
+        overflow-x:hidden;
+        
+      }
+      .slider section{
+        margin: 0 18% 0 17% ;
+        padding: 13% 0 0 0;
+      
+      }
+      .slider p
+      {
+        width: 16em;
+      }
+    
+      .skill-row
+    {
+        width:100%;
+        margin:auto;
+        text-align: left;
+
+    } 
+    
+    .box-main{
+        width: 80%;
+        height: 50%;
+    }
+
+    h1{
+        font-size: 1.7rem;
+        transform: translate(-1%, -135%);
+        
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 0.8rem;
+    }
+    
+    .sub-title{
+       
+        font-size: 0.9rem;  
+        margin-top: 3%;
+        transform: translate(-1%, 45px); 
+    }
+
+    p{
+        font-size: 0.7rem;
+    }
+
+    nav a
+    {
+        font-size: 0.8rem;
+    }
+
+    .top-container
+    {
+        height: 400px;
+    }
+    .second-container
+    {
+        height: 400px;
+    }
+    .third-container
+    {
+        height: 400px;
+    }
+    .fourth-container
+    {
+        height: 400px;
+    }
+    
+    .my-image
+    {
+        height:43%;
+        width: 31%;
+        max-width: 100%;
+        transform:translate(-14%,70%);
+    }  
+    .cloud1 
+    {
+        display: none;
+    }
+    .cloud2
+    {
+        display: none;
+    }
+   
+    .left {
+        left: 15px;
+      }
+      .right {
+        right: 15px;
+      }
+}
+
+
